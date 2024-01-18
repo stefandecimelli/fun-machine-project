@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js"
+		integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<form hx-post="/execute" hx-trigger="submit" hx-target="#result" hx-swap="afterbegin">
+		<label>
+			<input type="text" id="command" name="command" placeholder="$">
+		</label>
+	</form>
+
+	<code id="result"></code>
+
+</body>
+
+</html>
