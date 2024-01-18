@@ -1,15 +1,11 @@
 # fun-machine-project
 
-To install dependencies:
+Project goals:
+- Create an app that executed a command on the host and resturns the stdout & stderr
+- learn: EJS + HTMX
+- use: bun as a backend
 
-```bash
-bun install
+Run with:
 ```
-
-To run:
-
-```bash
-bun run index.ts
+bun run dev
 ```
-
-This project was created using `bun init` in bun v1.0.21. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
